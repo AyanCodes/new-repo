@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 75px;
+  background-color: transparent;
+}
+
+nav .nav--items--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  color: white;
+}
+
+nav .nav--items--container h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav .nav--items--container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  width: 300px;
+  font-weight: 600;
+}
+
+nav .nav--items--container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav--items--container ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.section-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-animation: bgAnim 5s ease alternate infinite;
+          animation: bgAnim 5s ease alternate infinite;
+  height: 100vh;
+}
+
+.section-one .text--wrapper {
+  height: 100%;
+  width: 85%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-one .text--wrapper .text--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  height: 100%;
+  width: 80%;
+}
+
+.section-one .text--wrapper .text--container h1 {
+  font-size: 64px;
+}
+
+.section-one .text--wrapper .text--container h1 span {
+  color: #ed6f84;
+}
+
+.section-one .text--wrapper .text--container p {
+  margin: 15px 0;
+  width: 500px;
+}
+
+.section-one .text--wrapper .text--container button {
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #ed6f84;
+  -webkit-box-shadow: 0 2px 8px 0 #6e6e6e;
+          box-shadow: 0 2px 8px 0 #6e6e6e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section-one .text--wrapper .text--container button a {
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 8% 20%;
+}
+
+.section-one .text--wrapper .text--container button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (max-width: 654px) {
+  nav {
+    height: 100px;
+  }
+  nav .nav--items--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav--items--container .nav-links {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .text--container {
+    width: 80%;
+  }
+  .text--container p {
+    width: 100% !important;
+  }
+}
+
+@-webkit-keyframes bgAnim {
+  from {
+    background-color: #8445bc;
+  }
+  to {
+    background-color: #b177e5;
+  }
+}
+
+@keyframes bgAnim {
+  from {
+    background-color: #8445bc;
+  }
+  to {
+    background-color: #b177e5;
+  }
+}
+/*# sourceMappingURL=index.css.map */
